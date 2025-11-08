@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo } from 'react';
 import { Pokemon } from '../types';
 import PokemonCard from './PokemonCard';
@@ -30,7 +29,7 @@ const PokemonSelection: React.FC<PokemonSelectionProps> = ({
   }, [allPokemon, filterType]);
 
   if (loading) {
-    return <LoadingSpinner text="Summoning Pokémon..." />;
+    return <LoadingSpinner text="Summoning fighters..." />;
   }
 
   return (

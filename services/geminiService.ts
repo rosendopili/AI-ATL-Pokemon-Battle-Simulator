@@ -1,4 +1,3 @@
-
 import { GoogleGenAI } from "@google/genai";
 import { Pokemon } from "../types";
 
@@ -8,7 +7,7 @@ const getStat = (pokemon: Pokemon, statName: string): number => {
 
 export const getBattleAnalysis = async (winner: Pokemon, loser: Pokemon): Promise<string> => {
   if (!process.env.API_KEY) {
-    return "API Key not found. The winning Pokémon's superior strategy and power led to victory!";
+    return "API Key not found. The winner's superior strategy and power led to victory!";
   }
   const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
@@ -16,7 +15,7 @@ export const getBattleAnalysis = async (winner: Pokemon, loser: Pokemon): Promis
   const loserStats = `HP: ${getStat(loser, 'hp')}, Attack: ${getStat(loser, 'attack')}, Defense: ${getStat(loser, 'defense')}, Speed: ${getStat(loser, 'speed')}`;
 
   const prompt = `
-    In a Pokémon battle, ${winner.name} defeated ${loser.name}.
+    In a weird animal fight, ${winner.name} defeated ${loser.name}.
     Winner's stats: ${winnerStats}.
     Loser's stats: ${loserStats}.
     

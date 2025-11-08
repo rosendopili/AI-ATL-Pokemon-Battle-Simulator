@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
 import { fetchPokemonList, fetchPokemonDetails } from './services/pokeapi';
 import { Pokemon, GameState } from './types';
@@ -110,7 +109,7 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-gray-900 text-white p-4 sm:p-6 md:p-8">
       <header className="text-center mb-8">
         <h1 className="text-4xl md:text-6xl font-press-start text-yellow-400 drop-shadow-[0_4px_6px_rgba(0,0,0,0.7)]">
-          Pokémon Battle Simulator
+          Weird Animal Fights
         </h1>
       </header>
       <main>
