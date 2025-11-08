@@ -1,0 +1,5 @@
+{
+  "name": "Pokémon Battle Simulator",
+  "description": "A web application that simulates Pokémon battles using stats from the PokéAPI. It features character selection, sorting by type, turn-by-turn battle narration, and a post-battle analysis powered by Gemini.",
+  "requestFramePermissions": []
+}
